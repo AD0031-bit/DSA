@@ -1,0 +1,29 @@
+Overview of sorting algorithms 
+1 Binary search-partition algo of quick sort(lomato,hoare,naive)
+2 array with 3 values-array where elments occur multiple time and put all occurence together-quick sort partition algo
+3 array of size n and range of values are small - counting sort 
+4 Radix sort range of array is o to n2 or 0 to n3  O(n)- time  and O(n)=extra space
+5 bucket sort algo- uniform distribution of the data 
+6 memory writes are costly these are costly when each write reduces the age of your memory.... Ex-epp room -Selection sort and Cycle sort 
+7 only adjacent elements are swapped- bubble sort / cocktail sort 
+8 Array is small - Selection sort and insertion sort - sort small number of elements like only 10 or 20 elements
+9 Extra space is a issue -Shell sort -doesnot use extra memory 
+-----------------------------------------------------------------------------
+General purpose sorting algorithms 
+these are algo used in library functions 
+general purpose where the range of input is not known / or anything about the data is unknown
+atleast time required which is mathematically proven - nlogn to sort a array with random data 
+general purpose are 
+- merge sort(stable sort algo)-works great for linked list- also good for data on tape drive-accessed sequentially-divide and conquer
+-heap sort-random access
+- quick sort (fastest of both)-divide and conquer
+merge sort and quick sort are both divide and conquer algorithms.... athey both paralise very well
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Hybrid algo
+many library use algo which are mix of both 
+tim sort in python -mix of insertion sort nad merge sort 
+true sort-quick sort , heap sort and insertion sort
+many languages have separate function for stable sorting -stable sort 
+c++ === stable_sort----->this is implementated using merge sort 
+----------------------------------------------------------------------------------------------------------------------------------------------------------

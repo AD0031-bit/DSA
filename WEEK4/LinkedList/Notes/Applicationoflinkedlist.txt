@@ -1,0 +1,16 @@
+Applications of the linked list
+-Worst case insertion at the end and begin are constantar theta(1)
+this is when we maintain both tail and head reference 
+if we maintain only the head then worst case will be linear 
+-Worst case deletion from begining will also be Theta(1);
+- Insertion and deletion in the middle are theta(1)
+if we have refernce to previous node 
+-Round robin implementation ie CPU scheduling algorithm ->Circular linked list are used here 
+-Merging two sorted linked listis faster than array
+-Implementation of simple memory manager where we need to link free blocks 
+-Easier implementation of Queue and Dequeue data structures 
+
+Disadvatage:
+No random access 
+no cache friendiliness
+

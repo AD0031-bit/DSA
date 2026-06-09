@@ -1,0 +1,24 @@
+Lomuto partition 
+partitions the array around a pivot in big o(n) time
+last element as pivot
+ensures that the pivot is at the correct position 
+not stable algo
+------------------------------------------------------------------------------------------------------------------------
+Hoare partition
+works better than lomuto partition method 
+Big(o)-1 extra space
+Big O(n)-time
+first element as pivot 
+pivot does not get at their right postion that is mid point 
+takes less number of comparisons than hoare
+preactically works better
+not stable 
+
+-------------------------------------------------------------------------------------------------------------------------
+Naive partition 
+stable partition 
+Big O(n)-extra space 
+Big O(n^2)-time complexity
+
+
+

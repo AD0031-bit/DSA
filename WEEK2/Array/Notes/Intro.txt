@@ -1,0 +1,24 @@
+Array - elements are stored in continuous memory location
+Array- indexing start at 0
+Random access - >find the ith elemnt in constant time 
+ Cache memory->closest to CPU fastest of all the memories
+ If processor is processing the array index then it also going to process the nearby indexes of the array as all of it is uploaede in  the cache
+ this is prefetching 
+
+ Types of Array 
+ ->Fixed size
+ ->Dynamic array
+
+ Fixed size array 
+ syntax or types 
+ int arr[10]---->stack
+  int arr[n]---->stack
+  int *arr=new int [n] ------>heap allocated array
+  int arr[]={10,15,30,40}---->stack
+
+  Memory is allocated in two ways- stack and heap 
+
+Dynamic size array 
+c++-vector
+Java-arraylist
+python- list

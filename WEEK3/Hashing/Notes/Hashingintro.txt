@@ -1,0 +1,44 @@
+Idea of hashing 
+take universe of keys->Hash function-convert the keys into small keys  ->array-which is called Hash table
+Example for keys here are phone numbers, name,employee id*/
+only unique vale exists for hashing
+
+How hash Functions work 
+->Should always map a large key to same key
+->Generate values from 0 to m-1
+->fast function time for int-BigO(1) for string Big O(len)
+->should have uniform distribution of large keys
+
+
+COLLISION-two large keys using the hash table result in same small index 
+Hash function should be dependent on number of values you insert in the hash table ... something 
+related to that power of 10 is a bad value of m... as you are only considering only last digits of the phone number 
+We also avoid taking prime numbers which are close to two powers or ten powers 
+
+example hash function
+1.h(large_key)=large_key%m
+2.for string , weighted sum 
+str[]="abcd"
+str[0]*x^0+str[1]*x^1+str[2]*x^2+str[3]*x^4
+3.Universal hashing
+
+
+
+Larger Integer type function Example
+1.h(large key)=large key%m    
+m->m should be prime number close to number of elements that should be there in the prime number
+we also choose to not have  
+this hash function is not ideal 
+
+2.For string 
+We use weighted sum technique for this one
+Not just simple sum - as it will cause the same string to go the same value of hash table 
+(str[0]x ^0+str[1] x^1+........)%m
+where m is the table size 
+
+like this 
+3. Universal Hashing
+ set of random hash functions 
+ Pick random hash function for the data 
+ 
+

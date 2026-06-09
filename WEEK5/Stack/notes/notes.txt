@@ -1,0 +1,3 @@
+it is like box with only one boundary to enter snd to exist 
+underflow:When pop()and peek()called on empty stack
+Overflow:when push called on a full stack

@@ -1,0 +1,37 @@
+For recursive function it is difficult to write the time complexity as there is no simple way 
+we first write the recursive relation 
+ EXAMPLE
+ void func(int n)
+ {
+    if(n<=0)
+    {
+        return ;
+    }
+    print("GFG")
+    fun(n/2)
+    fun(n/2)
+ }
+
+ Discussion for time complexity 
+ n>0
+ T(n)=T(n/2)+T(n/2)+(1)
+ n<=0
+ T(0)=0(n)
+ -----------------------------------------------------------------------------
+ EXAMPLE
+  void func(int n)
+ {
+    if(n<=1)
+    {
+        return ;
+    }
+  
+       print("GFG")
+    fun(n-1)
+ 
+ }
+ n>0
+ T(n)=T(n-1)+0(1)
+ n==1
+ T(1)=0(1)
+ ---------------------------------------------------------------------------

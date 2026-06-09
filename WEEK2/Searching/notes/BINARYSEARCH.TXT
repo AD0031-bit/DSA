@@ -1,0 +1,7 @@
+CHECK THE TIME COMPLEXITY AND THE TIME REQUIRED BY BOTH THE PROGRAMS TO WORK 
+
+Binary search depends on shrinking the search space
+
+In every iteration, either low must increase or high must decrease.
+
+If that doesn’t happen → ❌ infinite loop or wrong answer.

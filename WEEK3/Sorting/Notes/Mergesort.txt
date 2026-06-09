@@ -1,0 +1,13 @@
+It is divide and conquer algo 
+it first dive the input array in two parts then recursively solves two parts 
+ after this it merges them 
+ It is a stable algo -maintains the orignal order of equal items 
+ it works on theta =(n)time 
+ it takes O(n)-extra space 
+ There are any variants of merge sort 
+ Block merge sort takes nlogn time and is done inplace but typical merge sort takes 
+ this much time and space ;
+ used in external sorting - parts 
+ outperformed by quick sort 
+ The merge function in algorithm library do no use vector it is defined for array only
+

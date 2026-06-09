@@ -1,0 +1,25 @@
+Universe is big and the hash table is small 
+Two keys in the universe map to same entry in hash table 
+If previously the data is not known 
+then collisions are bound to happen 
+Birthday paradox- If there are 23 people in the room then there is 
+50% probablity 
+that two people have same birthday 
+If there are 70 people in the room then there is 99.9% probablity 
+that two people have same birthday 
+
+
+If keys are known in advance then this is called perfect hashing 
+perfect hashing gurantees no collisions -this is an advance method 
+used the built dictionaries of known english words 
+
+
+if keys are not known in advance then collisions are bound to happen 
+To avoid this two methods are used -chaining and open addressing 
+
+chaining -we make a chain of colliding items 
+open addressing - we use the same array if position is occupied then 
+we try to keep this key at some other slot
+
+
+

@@ -1,0 +1,32 @@
+Time complexities and internal working 
+push()  |
+pop()   |
+top()   |----O(1)
+size()  |
+empty() |
+
+stack container can be immplemented on 
+any underlying container that provides
+following operations  
+back()
+size()
+empty()
+push_back()
+pop_back()
+all these operatons are O(1)
+
+3 containers provide the above mentioned functionalities 
+list
+dequeue
+vector 
+stack can be immplemented using any of the 3 containers
+
+By default it is immplemented using dequeue
+stack is immplemented using other containers and work as an interface 
+so it is also called container adapter
+
+<stack>===container adapter
+queue , priority queue are also container adapters as they work on other adapater 
+work as an interface 
+
+

@@ -1,0 +1,13 @@
+Most used data structure 
+Applications->
+-dictionaries
+-Database indexing 
+-Cryptography
+-Caches
+-Symbol Tables in compilers-variables 
+-Routers-Wifi routers -mac address and ip addresss of local devices 
+-Getting data from databses-data stored in tables
+associative arrays are used for databases 
+
+
+

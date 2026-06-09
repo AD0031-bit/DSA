@@ -1,0 +1,8 @@
+function which calls themselves are called recursive function 
+-Execution begins main function first line 
+-last called functions complete its execution first then control is given back to the caller of the function- this continues
+Direct recursion- when the function call itself 
+Indirect recursion-When the function calls some other function  and the other function calls the orginal function indirect calling of first function--NOT VERY COMMON MAIN FOCUS ON DIRCT RECURSION
+-Compilers use stack frames for function call
+-After some function calls -stack overflow- happens if there is no base condition in  recursive program
+Base condition-recursion termination condition

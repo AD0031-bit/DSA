@@ -1,0 +1,4 @@
+RECURSION TREE METHOD
+->We consider the recursion tree and compute total work done
+->Recurence relation ->T(n)=[2T(n/2)]->recursive part+[(n)]->Non recursive part
+if write t(n/2)=2t(n/4)+cn/2----.you are doing cn work at every level 

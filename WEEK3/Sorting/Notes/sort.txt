@@ -1,0 +1,2 @@
+Sort function internally uses quick sort 
+hybrid of quick sort heap sort and insertion sort 

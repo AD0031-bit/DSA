@@ -1,0 +1,12 @@
+APPLICATION OF RECURSION
+1 Many algorithms techniques are based on RECURSION
+-Dyanmic programming
+-Backtracking
+-Divide and conquer (Binary Search, Quick sort,Merge sort)
+2 Many problems inheretly recursive in nature
+-tower of hanoi
+-DFS based on traversals (DFS of graph Inorder/Preorder/Postorder of tree)
+-Ex-recursive search of file in computer
+----------------------------------------------------------------------------------
+binary recursive search-O(logn)-auxillary space
+binary iterative search-O(1)-auxillary space

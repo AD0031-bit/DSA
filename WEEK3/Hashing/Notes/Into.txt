@@ -1,0 +1,45 @@
+Hashing is used in dictionaries where there are key and value pairs 
+Also used to implement sets
+It provides search, insert and delete all 3 operations in Big O(1) time on average
+In hash tables there are always unique values 
+No duplicates are allowed 
+Overide the previos key if duplicates are implemented
+Hashing works best for above 3 operations- Its is an expert data structure in above operations 
+
+For example for searching if the keys are inserted in unordered 
+then search will take linear time if you store the keys in ordered form the 
+search will be done big o(log n)
+and insert will take linear time 
+For sorted array search- bigO(log n )time 
+for insert-Big O(n) time 
+for deletion - Big O(n) time 
+
+For unsorted array search- bigO(n )time 
+for insert-Big O(1) time 
+for deletion - Big O(1) time 
+Binary search trees
+like version -AVL tree, red-black tree
+Big O(log n) time- search, insert, delete 
+
+Hashing not useful for-
+Finding closest value-Avl tree or red black tree
+Sorted data-Avl tree or red black tree
+Prefix searching-Trie Data structure->Alterante dictionary search provides-QUICK prefix search
+
+Self balancing tree-AVL tree or red black tree
+-----------------------------------------------------------------------------------------------------------
+CONCEPT of hashing 
+Direct Address table 
+Imagine a situation where you have 1000 keys with valuesfrom(0 to 999)
+, How would u=you implement follwing in O(1)time 
+1 search
+2 insert 
+3 delete
+Example Operations 
+insert(10)
+insert(20)
+insert(119)
+search(10)
+search(20)
+delete(119)
+search(119)

@@ -1,0 +1,11 @@
+where we want to access in 
+last in first out order we use stack
+
+Applications:
+->function call stack(LIFO order)
+->balanced parenthesis
+->reversing items 
+->infix to pstfix/prefix
+->Evaluation of postfix/prefix->stck 
+->stock span problem and its variants
+->Undo/redo or forward /backward 

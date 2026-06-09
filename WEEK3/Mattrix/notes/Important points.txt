@@ -1,0 +1,20 @@
+Important points for multi dimensional array
+1 Elements are stored in row major order 
+2 Internal curly brackets are optional->But it highly recommended to store the elements in brackets and multi line declaration of the array as to make the code more readable 
+3 Only the first dimension can be omitted when we intialize
+ex-int arr[][2]
+ex-int arr[][2][2]
+latest cpp 14 allows user to write variables in the array 
+int arr[m][n] where m,n are intitally intialized and declared 
+More ways to form multi dimensional array in the cpp 
+-double pointer -Not cache friendly -created on heap
+-Array of pointers-created on stack
+-Array of vectors-not cache friendly as simple 2D array method 
+                 -Individual row are of dynamic sizes 
+                 -Easy to pass to a function
+-Vector of Vectors-number of rows can be dynamic -we can add or remove a row - not as cache friendly as orignal method 
+*Jagged array- multi dimensional array formed when we use dynamic memory allocation and rows are of different size
+
+
+
+

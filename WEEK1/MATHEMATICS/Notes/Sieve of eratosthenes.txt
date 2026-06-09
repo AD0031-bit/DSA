@@ -1,0 +1,7 @@
+The idea of this algorithm is create a boolean array of 
+isprime of size n+1
+intialise this array as true 
+after the algo runs everything else will be false except the 
+This algo begins with two and mark every multiple of 2 as false 
+Then is goes to three and mark all its multiple as false 
+Then multiple of 5 are marked as false 

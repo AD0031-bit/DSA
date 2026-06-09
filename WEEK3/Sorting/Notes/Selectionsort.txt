@@ -1,0 +1,5 @@
+less Memory writes- Selection sort
+it reduces the memory writes 
+Basic idea for heap sort 
+Not stable 
+In place algo-No extra space is required for sorting 

@@ -1,0 +1,20 @@
+here given is an array of students 
+arr[]={("Anil",80),("Aryan",50),("Pish",50),("Ram",80),}-- sorted in alphabetical order
+we want the above array to be sorted as per there marks 
+and if marks are same then they are alphabetically sorted 
+this is stability of a sort algo
+if two items have same value then they should appear in same order as they appeeared in the orgnal array 
+
+
+OUTPUT Of a stable sorting algorithm -
+arr[]={("Anil",50),("Pish",50)("Aryan",80),,("Ram",80),}
+
+Stability is important if there are objects of this form where there are multiple fields
+Any output-by unstable algo -no care for order 
+Example
+UNSTABLE->selection sort, heap sort and quick sort(cause disturbance int he orginal order of the array)
+
+STABLE->bubble sort,insertion sort, merge sort(if 2 elements are same it does not disturb the whole array)
+
+
+

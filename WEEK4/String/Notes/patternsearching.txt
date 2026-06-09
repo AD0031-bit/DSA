@@ -1,0 +1,45 @@
+We are given a big text a string of
+and pattern
+find all occurences of pattern in the big string 
+and you return the index of each occuerence if the pattern is present 
+---------------------------------------------------------------------------
+Algorithms to solve
+m->pattern length
+n->text length
+1<=m<=n
+1. Naive: No preprocessing 
+:-O((n-m+1)*m) time complexity
+->pattern is compared with every window 
+:-Naive when all characters of pattern ae distinct:O(n)
+
+
+2. Rabin karp algo:preprocess pattern
+O((n-m+1)*m) time complexity
+->uses the idea of rolling hash to optimise the naive algo instead  of checking 
+each and every character everytime you first compute a hash function and if that matches 
+then match individual characters 
+ worst case- hash function matches everytime then it perform poorer than the naive method 
+
+
+ 3.KMP algo:preprocess pattern [MOST POPULAR AND MOST COMPLICATED ALGO IN CS]
+ O(n) time complexity -linear time 
+ ->preprocessses the redundancy within the pattern 
+ by precomputing in LPS array of size equal to the pattern length 
+ preprocess a pattern build an lps array, then uises this lps array to find the 
+ occurence of pattern in the text 
+ LPS->longest proper prefix 
+ which also suffix 
+
+other linear ago:boyer moore algo, Z algo 
+Z algo is really simple as compared to the kmp algo 
+
+4.Suffix tree :preprocessed text
+this not an algo it is a data structure 
+preprocessed text
+->can search the pattern in a fixed text by preprocessing the text [linear time complexity]
+ O(m) time complexity where m is length of the pattern 
+
+Trie data structure ->suffix is based on trie data structure 
+fixed text that do not change - suffix is preferred 
+
+

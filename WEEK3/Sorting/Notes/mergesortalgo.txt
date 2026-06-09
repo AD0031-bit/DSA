@@ -1,0 +1,7 @@
+MERGE SORT ALGOROTHIM 
+we take the array and first index and last index of the input array 
+-we check whether the input array contains at least 2 elements 
+- we check the mid point of the array m=(l+(r-l))/2---->this tyoe of expression is used in 
+binary and merge sort so that there is no overflow 
+then we recursively sort both the halves left and right 
+- then we call the merge function - which merge and sort both subarrays 

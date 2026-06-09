@@ -1,0 +1,134 @@
+This method uses single array only 
+No of slots in the hash table >=No of keys to be inserted 
+For example - if you want to insert 100 keys 
+then hash table size should be atleast 100
+Cache friendly ->as it uses single array
+-------------------------------------------------------------------
+Multiple ways to implement open addressing 
+Linear probing
+Quadratic probing 
+Double hashing 
+----------------------------------------------------------------------
+Linear probing :Linearly search for next empty slot 
+when there is a collision 
+
+hash function 
+hash(key)=key%7->hash table has value 7
+
+if last slot is occupied then we linearly circular search for next available slot
+----------------------------------------------------------------------
+How to handle searching in open addressing 
+ insert(50)insert (51) insert (15) search(15)
+ search(64) delete (15)
+ search(15)
+ 0|     |       hash function 
+ 1| 50  |       hash(key)=key%7
+ 2| 51  |
+ 3| 15  |
+ 4|     |
+ 5|     |
+ 6|     |
+
+you will do the le=inear search ... 
+you will stop the search when you 
+find the 
+-empty slot or 
+-you find the element 
+-search the whole hash table 
+if the whole hash table is filled ->not empty slot
+-search the whole hash table 
+
+We compute the hash funcion 
+we go to that index and compute . if we find , we return true . otherwise
+we linearly hash  
+---------------------------------------------------------------------------------------
+How to handle deleting in open addressing 
+ insert(50)insert (51) insert (15) search(15)
+ search(64) delete (15)
+ search(15)
+ 0|     |       hash function 
+ 1| 50  |       hash(key)=key%7
+ 2| 51  |
+ 3| 15  |
+ 4|     |
+ 5|     |
+ 6|     |
+ Directly making the slot empty after applying the hash function
+ Problem with simply making the slot empty
+ it will create problem with the search operation as 
+ if we delete 51 then the slot will become empty and then search 15
+ it will result in 15 not found but 15 is present
+  Search will fail ->it will show false even if the element is present 
+
+  Instead mark the slot deleted 
+  Donot stop the search if you encounter a deletedslot 
+  -----------------------------------------------------------------------------------------------
+  Problem of clustering 
+  caused in the linear probe for open addressing 
+    if there is a collision or clash in a key you do linear 
+    search a empty slot and then find the position where you linearly insert
+    the element 
+you are actually forming clusters 
+if one collision happen then you form a cluster of size 2
+if any of these two indexes are going to have new key to be inserted then 
+cluster of size 3 will be formed 
+
+clusters keep on growing 
+Due to this all operations become costly -search, ionsertion , deletion 
+Imapct the performance of open addressing 
+--------------------------------------------------------------------------------------------
+How to handle clustering ?
+LINEAR probing ->
+h(key)=key%7
+hash (key,ith probe)=(h(key)+i)%7
+When  you are at ith probing when you want to insert at 
+ith probe and it is occupied you begin with i=1
+you search your probing with i=1
+
+ Quadratic probing 
+ hash (key,ith probe)=(h(key)+i*i)%m
+ problem of secondary clusters 
+ It does not find a empty slot if there exits empty spaces;
+ if load factor is less than 0.5 and m is a prime number 
+ then only empty slots will be found 
+
+ Double Hashing probing 
+ hash (key,ith probe)=(h1(key)+i*h2(key))%m
+-----------------------------------------------------------------------------------
+
+Double Hashing 
+hash (key,ith probe)=(h1(key)+i*h2(key))%m
+
+in double hashing we use two hash functions 
+one is orignal function  
+another hash function to find the next slot while we are probing for 
+an empty slot 
+in quadratic probing there was an issue of being double size and m should be a prime number 
+while we were searching 
+
+m is relatively prime to h2(key) then you do not need double size 
+if there is a free slot then you will always get one 
+
+distributes keys more uniformly than linear and quadratic probing 
+
+no clustering 
+
+---------------------------------------------------------------------------------
+Why h2(key) and m should be relatively prime ?
+then double hashing will always find an empty slot if there is one 
+
+it fulfils the requirements if whata linear probing does 
+h2(key)->tells the shift that you need to make from the current position 
+
+for example :
+h2(key)=6
+shift->possible slots as 6 and 7 are relatively prime 
+(1X6)%7=6
+(2X6)%7=5
+(3X6)%7=4
+(4X6)%7=3
+(5X6)%7=2
+(6X6)%7=1
+
+linear probing is where the value of offset is one 
+OFFSET=h2(key)

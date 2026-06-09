@@ -1,0 +1,56 @@
+Recursion practice 
+output-1
+----------------------------------------------------------------------------------------------
+void func(int n)
+{
+    if(n==0)
+    return ;
+    cout<<n<<endl;
+    func(n-1);
+    cout<<n<<endl;
+}
+int main()
+{
+    func(3);
+    return 0;
+}
+DRY RUN 
+func=3
+output -3
+func=2
+o/p-2
+func-1
+o/p-1
+then func=0->not applicable
+o/p- 1
+o/p- 2
+o/p- 3
+final o/p- 
+3
+2
+1
+1
+2
+3
+--------------------------------------------------------------------------------
+Output question-2
+void func(int n)
+{
+    if(n==0)
+    return ;
+    
+    func(n-1);
+    cout<<n<<endl;
+    func(n-1);
+}
+int main()
+{
+    func(3);
+    return 0;
+}
+DRY RUN
+f-1 o/p-3
+
+
+
+

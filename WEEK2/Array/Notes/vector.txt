@@ -1,0 +1,14 @@
+Vector-
+
+problem with array->We always end up wasting space when allocating extra memory- n dynamic size change happen 
+when array are passed to functions as parameters then they are always  passed as pointers and if you try to take the sizee of the array there usinf sizeof operator you always end up getting the size of the pointer and not the array
+
+
+advantage of vector
+->dyanmic size 
+-> rich libraray function -find , erase,insert,  
+->you can return a vector to the function , same cannot be done  in case of array which are not dynamically created 
+->vector values are intialised when they are created for the case of integer vector valu intialised at the time of creation will be 0
+for boolean vector - all values will be intialised to false 
+->we can copy one vector to other just like 
+v1=v2;

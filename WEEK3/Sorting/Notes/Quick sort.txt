@@ -1,0 +1,24 @@
+This is also divide and conquer algo but the difference between quick sort and merge sort is 
+that partition is much simplier in merge sort that is exact mid point but in quick sort it is not so 
+in merge sort the merging is difficult 
+Merge sort- merge part is complex the division is simple that is half and half -key function - merge function 
+Quick sort- partition division is complex - key function is partition function 
+Three partitionare there -
+Naive -Stable 
+Lomuto -Non stable 
+Hoare-Non stable ->Most effiecient partition 
+Worst case time complexity is Big O (n^2)
+But still it faster than merge sort
+->in place algo -(Except thr recurrsion stack)
+->cache friendly
+->Avg case is O(n logn)
+->tail recursive-if recursive function does the recursive call as the last thing 
+then it is tail recursive function  rewritten in way that it is replaced by goto by compilers ->tail call optimisation 
+IN cpp 
+there are two functions sort(QUICK SORT, HEAP SORT,INSERTION SORT but mainly quick sort based ) and stable sort 
+there is function called q sort ->quick sort 
+JAVA usses 
+quick sort for primitive data types 
+-----------------------------------------------------------------------------------
+when stability is not required quick sort is most efficient 
+when stability is required then merge sort is better

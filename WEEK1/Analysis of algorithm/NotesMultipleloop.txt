@@ -1,0 +1,71 @@
+
+EXAMPLE-1
+void func(int n)
+{
+    for(int i=0;i<=n;i++)
+    {
+        // Some Theta(1)work------------->time-theta(n)
+    }
+      for(int i=0;i<=n;i=i*2)
+    {
+        // Some Theta(1)work------------->time-theta(log n)
+    }
+      for(int i=0;i<=100;i++)
+    {
+        // Some Theta(1)work------------->time-theta(1)
+    }
+}
+total time complexity of this term is --->theta(n)
+--------------------------------------------------------------------------------------------------------------------
+
+EXAMPLE-2
+void func(int n)
+{
+    for(int i=0;i<=n;i++)------------>theta(n)                      |
+    {for(int j=0;j<=n;j=j*2)----------->theta(log n)                 --->Overall time complexity of the loop is theta(nlogn)
+    {
+        // Some Theta(1)work
+    }}
+}
+WHEN THERE ARE NESTING OF LOOPS YOU MULTIPLY THE TIME PERIODS
+----------------------------------------------------------------------------------------------------------------------
+
+EXAMPLE-3
+void func(int n)
+{
+    for(int i=0;i<=n;i++)------------>theta(n)                      
+    {for(int j=0;j<=n;j=j*2)----------->theta(log n)  ----------Overall-time theta(nlogn)           
+    {
+        // Some Theta(1)work
+    }}
+}
+
+
+    for(int i=0;i<n;i++)------------>theta(n)                      
+    {for(int j=0;j<n;j++)----------->theta(log n)   ----------Overall-time theta(n^2)                 
+    {
+        // Some Theta(1)work
+    }}
+    OVERALL GROWTH WILL BE ADDITION OF THESE 2
+     theta(n log n)+theta (n^2)=theta(n^2)
+----------------------------------------------------------------------------------------------------
+EXAMPLE-4--Different inputs
+
+void func(int n)
+{
+    for(int i=0;i<=n;i++)------------>theta(n)                      
+    {for(int j=0;j<=n;j=j*2)----------->theta(log n)  ----------Overall-time theta(nlogn)           
+    {
+        // Some Theta(1)work
+    }}
+}
+
+
+    for(int i=0;i<m;i++)------------>theta(n)                      
+    {for(int j=0;j<m;j++)----------->theta(log n)   ----------Overall-time theta(m^2)                 
+    {
+        // Some Theta(1)work
+    }}
+    theta(nlogn+m^2)
+
+

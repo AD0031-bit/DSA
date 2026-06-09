@@ -1,0 +1,14 @@
+//Kadane algorithm
+void effsol(int arr[],int n)
+{
+    int maxele=arr[0];
+    int res=arr[0];
+    for(int i=1;i<n;i++)
+    {
+      
+        maxele=max(maxele+arr[i],arr[i]);
+        res=max(res,maxele);
+    }
+    cout<<res;
+    
+}

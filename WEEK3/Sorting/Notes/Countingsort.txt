@@ -1,0 +1,8 @@
+Counting sort algo is linear time algo 
+used in the cases there is small input 
+and if we have n elements and the elements are in the range 0 to k-1
+Then sort algo takes O(n+k)time 
+it does not compare the items with each other, it just counts the occurences 
+useful when k is linear in terms of n or 2n or 3n
+When k becomes n log n or quadratic then it is of no use 
+

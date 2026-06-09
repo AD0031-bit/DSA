@@ -1,0 +1,13 @@
+loop from 2 to square root of n 
+Why so?
+If you consider all divisors of a number 
+They always appear in pairs
+The smaller of two numbers in the pair is always smaller than or equal to square 
+root of n 
+For exapmle if you consider all divisors of 30
+One pair-2 and 15 , here 2 is smaller than square root of 30
+You alway have a prime factor which is smaller than or equal 
+to the square root of that number 
+ If the number is not prime then one of the prime factor must be in this range 
+ If no prime factor or divisor in this range Then the number is prime 
+ 

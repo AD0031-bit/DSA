@@ -1,0 +1,10 @@
+Heap Sort 
+this algo is based on the selection sort algorithm 
+In selection sort we found the max element and then switched it with last element 
+We did linear search in the selection sort 
+----------------------------------------------
+here in heap sort we use 
+Heap sort uses max heap data structures 
+we build a max heap from an array - this is big O(n)time 
+we swap the last max element with the root
+Heapify operation 

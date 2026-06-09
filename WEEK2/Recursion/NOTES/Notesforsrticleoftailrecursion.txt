@@ -1,0 +1,23 @@
+int fact(int N) 
+{ 
+    if (N == 0) 
+        return 1; 
+  
+    return N*fact(N-1); 
+} 
+this is not a tail recursive function 
+Consider the following function to calculate factorial of N. Although it looks like Tail Recursive at first look, 
+it is a non-tail-recursive function. If we take a closer look, we can see that the value returned
+ by fact(N-1) is used in fact(N), so the call to fact(N-1) is not the last thing done by fact(N).
+ The above function can be written as a Tail Recursive function. The idea is
+  to use one more argument and accumulate the factorial value in the second argument. 
+  When N reaches 0, return the accumulated value.
+ 
+
+int factTR(int N, int a) 
+{ 
+    if (N == 0)  
+        return a; 
+  
+    return factTR(N-1, N*a); 
+} 

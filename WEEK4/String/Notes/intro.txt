@@ -1,0 +1,16 @@
+Sequence of characters 
+String -small set of elements or characters 
+Around 128 ascii value that cover most of the characters
+First 32 are control characters
+Limited set of characters makes string special 
+Contiguous integer values for 'a' to 'z'
+And 'A' to 'Z'in both ascii and UTF-16
+IN cpp :char ASCII 8 Bit Also support Wchar_t
+IN java:UTF-16 16 Bit Also support byte 
+Ascii->oldest format to store the characters 
+First 128 is same as standard as first Ascii Characters 
+This is with referrence to the extended ascii values 
+UTF -16
+is  a uniecode standard format created to store characters of other languages as well 
+First 128 is same as standard as first 128 Ascii Characters
+If you take a character and assign to integer you will get ascii value 

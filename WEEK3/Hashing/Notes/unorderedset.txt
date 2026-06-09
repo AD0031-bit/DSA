@@ -1,0 +1,30 @@
+Behaviour as set 
+internal application is different 
+set based on red black tree 
+unordered set  is based on hashing 
+
+find function returns the iterator if element is found 
+otherwise end iterator of set
+
+count return 1 or 0 1 if element is present 
+0 if element is not present 
+
+functions :
+begin()
+end()       O(1) in worst case 
+cbegin()
+cend()
+
+count()
+find()       O(1) on average
+erase(key)
+erase(it)
+insert()
+
+size() -O(1)
+empty()
+
+hashing takes constant time if you take constant time 
+
+application->can use search, insert, delete can be done on O(1) on average 
+only keys - unordered set 

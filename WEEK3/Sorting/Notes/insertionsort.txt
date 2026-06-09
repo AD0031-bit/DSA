@@ -1,0 +1,9 @@
+This is an inplace and stable algo that takes big o(n2) time 
+It does not take any extra array or auxillary space
+Stability-this is basically if there is a property that is equal the the orgnal order is attained in the array
+Small sized array are preferred
+Python uses - tim sort 
+Tim sort used merge sort and when array size is small it switches to 
+sorting -they are used in hybrid algo
+O(n)-best case- happpens when input array is sorted 
+O(n2)-worst case time complexity- happens when array is reverse sorted 

@@ -1,0 +1,7 @@
+Standard template library in c++
+this function is defined in the sort library
+contaners with random accesss - array,vector,deque
+Sort function in cpp - receiver two iterartors - address of the first element 
+- second address- is after the last element
+
+

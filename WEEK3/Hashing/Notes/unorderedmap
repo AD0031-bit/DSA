@@ -1,0 +1,25 @@
+UNORDERED MAP
+used to store key value pair 
+uses hashing 
+no order of keys
+fast search insert and delete -O(1)[time complexity]
+
+functions :
+begin()
+end()       O(1) in worst case 
+size()
+empty()
+
+count()
+find()       O(1) on average
+erase(key)
+insert()
+[]
+at
+
+-------------------------------------------------
+MAP
+based on red black tree 
+ordered form key storage 
+search insert and delete -O(log n)[time complexity]
+-----------------------------------------------------------

@@ -1,0 +1,59 @@
+Tail function-when parent function has nothing more to do
+when child function has finished
+
+when caller has to do something more to do after the child is called then it is not tail recursive
+//function 1
+//print from n to 1
+void func(int n)
+{
+    if(n==0)
+    return ;
+    cout<<n<<endl;
+    func(n-1);
+   
+}
+int main()
+{
+    func(3);
+    return 0;
+}
+
+
+//function 2
+//print from 1 to n
+void func(int n)
+{
+    if(n==0)
+    return ;
+   
+    func(n-1);
+     cout<<n<<endl;
+   
+}
+int main()
+{
+    func(3);
+    return 0;
+}
+
+function 1 will take less time on modern Compilers- 
+Seeing that the functions are tail recursive modern comilers make changes to the code func-1
+like this 
+void func(int n)
+{
+    start:
+    if(n==0)
+    return ;
+    cout<<n<<endl;
+    func(n-1);---> n=n-1;
+                   goto start;
+   
+}
+int main()
+{
+    func(3);
+    return 0;
+}
+
+--- These changes made by modern compilers are called tail call elimination 
+due to this fact tail recursive functions are preffered over non tail recursive ones 

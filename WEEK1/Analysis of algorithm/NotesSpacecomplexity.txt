@@ -1,0 +1,68 @@
+Order of growth of memory space or RAM space in term of input size 
+
+For EXAMPLE
+int getSum(int n)
+{
+    return n*(n+1)/2
+}
+The amount memory spce does not grow int terms of input size
+as long number of variables are constant 
+its not an array of variables or array of memory- it is considered constant where space complexity is conserned
+EXAMPLE-2
+int getsum(int n)
+{
+    int sum=0;
+    for(int i=1;i<=n;i++)
+    {
+        sum=sum+i;
+        return sum;
+    }
+}
+Variables are constant so the space 
+complexity of both the above examples are 
+theta(1) or O(1)--->Both represent constant order of growth
+ ----------------------------------------------------------------------------------------------------------------------------------
+ EXAMPLE
+ int arrSum(int arr[],int n)
+ {
+    int sum=0;
+    for(int i=0;i<n;i++)
+    sum=sum+arr[i];
+    return sum;
+ }
+ Space complexity -theta(n)-the space grows lineraly in terms of input size
+ ------------------------------------------------------------------------------------------------------------------------------------------
+ Auxiliary Space (Most used term)
+ order of growth of the extra space or temporary space you create to solve a problem 
+  EXAMPLE
+ int arrSum(int arr[],int n)
+ {
+    int sum=0;
+    for(int i=0;i<n;i++)
+    sum=sum+arr[i];
+    return sum;
+ }
+ EXTRA SPACE -SPACE CREATED OTHER THAN INPUT OR OUTPUT
+ It uses linear space only for input
+ Auxillary space for this program is theta 1
+
+ Array problems , list problems - where there is an input container the space required is theta n
+
+There are some sorting algorihim that does not use sorting algorithm 
+Merge sort is a sorting algo that uses extra array of size n 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Space complexity
+EXAMPLE
+int fun(int n)
+{
+    if(n<=0)
+    return 0;
+    return n+fun(n-1);
+}
+this programdoes not use any hash table or anything still it does not have theta 1 auxillary space 
+extra space is required for the storage of function call in the call stack
+
+At a moment in the worst case scenario there are n+1 functions call in  the stack
+theta(n+1)=theta(n)

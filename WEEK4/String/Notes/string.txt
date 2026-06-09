@@ -1,0 +1,59 @@
+String in cpp
+-C-style String 
+-Object of string class 
+
+int main()
+{
+    char str[]="gfg";
+    cout<<sizeof(str);
+    return 0;
+}
+output-4
+int main()
+{
+    char str[]={'g','f','g'};
+    cout<<sizeof(str);
+    return 0;
+}
+output-3
+---------------------------------------------------------------------------------------------
+Functions for c style string
+strlen 
+strcmp lexographically
+strcpy
+---------------------------------------------------------------------------------------------------
+C++ Stirng 
+
+-Richer library
+-support operators like +,<,>,==,<=,>=
+-can assign the string 
+-do not worry about size 
+-can be converted to C-style sting 
+---------------------------------------------------------------------------------
+Readings string from console 
+int main()
+{
+    srtring str;
+    cout<"Enter name:";
+    cin>>str;->>>>  getline(cin,str,'a');
+    cout<<"Your name:"<<str;
+    return 0;
+}
+Iterating throug a string 
+int main()
+{
+    string str="geeksforgeeks";
+    for(int i=0;i<str.length();i++)
+    {
+        cout<<str[i];
+        cout<<endl;
+    }
+    for(int x:str)
+    {
+        cout<<x;
+    }
+}
+
+
+
+

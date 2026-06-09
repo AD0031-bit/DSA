@@ -1,0 +1,13 @@
+Every node stores pointer or reference to next node
+
+ The idea is to drop the contiguous memory requirements 
+ so that insertions, deletions can efficiently happen at 
+ the middle as well
+
+No preallocation is needed 
+----------------------------------------------------
+ Node *next;//Self referential structure
+    
+    The reason for the self referential structure is that 
+    every node needs to have address of the next node 
+    Data type of next node is same as the current node 
