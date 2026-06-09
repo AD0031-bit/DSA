@@ -17,11 +17,11 @@ This repo contains my solutions and practice codes for Data Structures and Algor
 
 ##  What This Repository Contains
 
-✔ C++ implementations of DSA problems  
-✔ Topic-wise structured notes  
-✔ Important concepts and patterns  
-✔ Interview preparation material  
-✔ Practice solutions from coding platforms  
+C++ implementations of DSA problems  
+Topic-wise structured notes  
+Important concepts and patterns  
+Interview preparation material  
+Practice solutions from coding platforms  
 
 ---
 
